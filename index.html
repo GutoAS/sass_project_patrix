@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- glightbox -->
+    <link
+      rel="stylesheet"
+      href="node_modules/glightbox/dist/css/glightbox.min.css"
+    />
   </head>
   <body>
     <!--*** START THE NAVBAR SECTION ***-->
@@ -121,7 +127,7 @@
               </picture>
               <a
                 href="#"
-                class="position-absolute top-50 start-50 translate-middle"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
               >
                 <span><i class="fa-solid fa-play-circle"></i></span>
                 <span
@@ -145,6 +151,16 @@
     </section>
 
     <!-- javascript -->
+    <script src="node_modules/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        href: "https://www.youtube.com/watch?v=FhyHvFXXkbo",
+        type: "video",
+        source: "youtube", //vimeo, youtube or local
+        width: 900,
+        autoplayVideos: true,
+      });
+    </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
