@@ -4,9 +4,11 @@ const sass = require("gulp-sass")(require("sass"));
 
 function buildStyles() {
   return src("sass/**/*.scss")
-    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(sass({ outputStyle: "expanded" }))
     .pipe(dest("css"));
+  // .pipe(sass({ outputStyle: "compressed" }))
   // .pipe(purgecss({ content: ["*.html"] }))
+  // .pipe(dest("css"));
 }
 
 function watchTask() {

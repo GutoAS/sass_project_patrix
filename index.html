@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- end -->
+
     <title>Patrix | Portfolio</title>
+
+    <!-- css styles -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/fontawesome.css" />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--*** START THE NAVBAR SECTION ***-->
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="images/logo.png" alt="logo image"
@@ -63,6 +74,77 @@
       </div>
     </nav>
 
+    <!-- *** START THE INTRO SECTION *** -->
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <!-- start the content for the intro -->
+          <div class="col-md-6 intros">
+            <h1 class="display-2">
+              <span class="display-2--intro">Hey, I'm Agostinho</span
+              ><span class="display-2--description lh-base"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+                hic dignissimos maiores rem molestias suscipit veniam .</span
+              >
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">
+              Get In touch
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+
+          <!-- start the content for the video -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box">
+              <picture>
+                <source
+                  sizes="(max-width: 500px) 100vw, 500px"
+                  srcset="
+                    images/arts/intro-section-illustration_sewld5_c_scale,w_200.webp 200w,
+                    images/arts/intro-section-illustration_sewld5_c_scale,w_500.webp 500w
+                  "
+                />
+                <source
+                  sizes="(max-width: 500px) 100vw, 500px"
+                  srcset="
+                    images/arts/intro-section-illustration_sewld5_c_scale,w_200.png 200w,
+                    images/arts/intro-section-illustration_sewld5_c_scale,w_500.png 500w
+                  "
+                />
+                <img
+                  src="images/arts/intro-section-illustration_sewld5_c_scale,w_500.png"
+                  alt="video ilustration"
+                  class="img-fluid"
+                />
+              </picture>
+              <a
+                href="#"
+                class="position-absolute top-50 start-50 translate-middle"
+              >
+                <span><i class="fa-solid fa-play-circle"></i></span>
+                <span
+                  class="border-animation-icon border-animation-icon--border-1"
+                ></span>
+                <span
+                  class="border-animation-icon border-animation-icon--border-2"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L30,208C60,224,120,256,180,272C240,288,300,288,360,266.7C420,245,480,203,540,181.3C600,160,660,160,720,176C780,192,840,224,900,213.3C960,203,1020,149,1080,144C1140,139,1200,181,1260,186.7C1320,192,1380,160,1410,144L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- javascript -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
