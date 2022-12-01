@@ -10,14 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-purgecss": "^5.0.0",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.2",
-    "sass": "^1.56.1"
+    "gulp-purgecss": "^5.0.0"
   }
 }
