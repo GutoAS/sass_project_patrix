@@ -81,3 +81,9 @@
        border: 0;
     }
 }
+
+// GRADIENT BG
+
+.gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
