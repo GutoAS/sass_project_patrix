@@ -11175,6 +11175,9 @@ textarea.form-control-lg {
     font-size: 1.6rem;
   }
 }
+.footer-sm a:hover {
+  color: #9926f0;
+}
 
 .company-list {
   display: block;
@@ -11199,4 +11202,21 @@ textarea.form-control-lg {
 .footer-bottom__copyright {
   color: #6c757d;
   font-weight: 400;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+}
+.back-to-top i {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
